@@ -1,1 +1,65 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tags on arter.ro</title><link>https://arter.ro/tags/</link><description>Recent content in Tags on arter.ro</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 27 Apr 2022 22:09:00 -0700</lastBuildDate><atom:link href="https://arter.ro/tags/index.xml" rel="self" type="application/rss+xml"/><item><title>kubernetes</title><link>https://arter.ro/tags/kubernetes/</link><pubDate>Wed, 27 Apr 2022 22:09:00 -0700</pubDate><guid>https://arter.ro/tags/kubernetes/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on arter.ro</title>
+    <link>https://arter.ro/tags/</link>
+    <description>Recent content in Tags on arter.ro</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 31 May 2023 22:40:54 -0700</lastBuildDate><atom:link href="https://arter.ro/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>certificates</title>
+      <link>https://arter.ro/tags/certificates/</link>
+      <pubDate>Wed, 31 May 2023 22:40:54 -0700</pubDate>
+      
+      <guid>https://arter.ro/tags/certificates/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cybersecurity</title>
+      <link>https://arter.ro/tags/cybersecurity/</link>
+      <pubDate>Wed, 31 May 2023 22:40:54 -0700</pubDate>
+      
+      <guid>https://arter.ro/tags/cybersecurity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>google</title>
+      <link>https://arter.ro/tags/google/</link>
+      <pubDate>Wed, 31 May 2023 22:40:54 -0700</pubDate>
+      
+      <guid>https://arter.ro/tags/google/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>audio</title>
+      <link>https://arter.ro/tags/audio/</link>
+      <pubDate>Tue, 31 May 2022 22:42:54 -0700</pubDate>
+      
+      <guid>https://arter.ro/tags/audio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://arter.ro/tags/linux/</link>
+      <pubDate>Tue, 31 May 2022 22:42:54 -0700</pubDate>
+      
+      <guid>https://arter.ro/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kubernetes</title>
+      <link>https://arter.ro/tags/kubernetes/</link>
+      <pubDate>Fri, 29 Apr 2022 12:48:00 -0700</pubDate>
+      
+      <guid>https://arter.ro/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

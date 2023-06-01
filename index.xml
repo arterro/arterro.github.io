@@ -1,1 +1,47 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>arter.ro</title><link>https://arter.ro/</link><description>Recent content on arter.ro</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 27 Apr 2022 22:09:00 -0700</lastBuildDate><atom:link href="https://arter.ro/index.xml" rel="self" type="application/rss+xml"/><item><title>Kubernetes Absolute Beginner</title><link>https://arter.ro/notes/kk_00_kubernetes_absolute_beginner/</link><pubDate>Wed, 27 Apr 2022 22:09:00 -0700</pubDate><guid>https://arter.ro/notes/kk_00_kubernetes_absolute_beginner/</guid><description>Notes pertaining to the KodeKloud Kubernetes Absolute Beginner course</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>arter.ro</title>
+    <link>https://arter.ro/</link>
+    <description>Recent content on arter.ro</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 31 May 2023 22:40:54 -0700</lastBuildDate><atom:link href="https://arter.ro/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Google Cybersecurity Professional Certificate - Week Two</title>
+      <link>https://arter.ro/notes/google-cybersec-cert-week-two/</link>
+      <pubDate>Wed, 31 May 2023 22:40:54 -0700</pubDate>
+      
+      <guid>https://arter.ro/notes/google-cybersec-cert-week-two/</guid>
+      <description>Week Two of Google&amp;rsquo;s Cybersecurity Certification</description>
+    </item>
+    
+    <item>
+      <title>Google Cybersecurity Professional Certificate - Week One</title>
+      <link>https://arter.ro/notes/google-cybersec-cert-week-one/</link>
+      <pubDate>Wed, 31 May 2023 22:40:00 -0700</pubDate>
+      
+      <guid>https://arter.ro/notes/google-cybersec-cert-week-one/</guid>
+      <description>Week One of Google&amp;rsquo;s Cybersecurity Certification</description>
+    </item>
+    
+    <item>
+      <title>Behringer UV1 Audio Stuttering</title>
+      <link>https://arter.ro/synapse/behringer-uv1-linux-stutter/</link>
+      <pubDate>Tue, 31 May 2022 22:42:54 -0700</pubDate>
+      
+      <guid>https://arter.ro/synapse/behringer-uv1-linux-stutter/</guid>
+      <description>Fixing the audio stutter in Linux (Arch)</description>
+    </item>
+    
+    <item>
+      <title>Kubernetes Absolute Beginner</title>
+      <link>https://arter.ro/notes/k8s-absolute-beginner/</link>
+      <pubDate>Fri, 29 Apr 2022 12:48:00 -0700</pubDate>
+      
+      <guid>https://arter.ro/notes/k8s-absolute-beginner/</guid>
+      <description>Notes pertaining to the KodeKloud Kubernetes Absolute Beginner course</description>
+    </item>
+    
+  </channel>
+</rss>
