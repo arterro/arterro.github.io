@@ -1,135 +1,112 @@
 <!DOCTYPE html>
-<html lang="en-us"><head><meta charset="utf-8">
-<meta http-equiv="content-type" content="text/html">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html><head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-<title itemprop="name">Kubernetes Absolute Beginner | arter.ro</title>
-<meta property="og:title" content="Kubernetes Absolute Beginner | arter.ro" />
-<meta name="twitter:title" content="Kubernetes Absolute Beginner | arter.ro" />
-<meta itemprop="name" content="Kubernetes Absolute Beginner | arter.ro" />
-<meta name="application-name" content="Kubernetes Absolute Beginner | arter.ro" />
-<meta property="og:site_name" content="" />
-
-<meta name="description" content="">
-<meta itemprop="description" content="" />
-<meta property="og:description" content="" />
-<meta name="twitter:description" content="" />
-
-<meta property="og:locale" content="en-us" />
-<meta name="language" content="en-us" />
-
-
-
-  <meta itemprop="image" content="https://arter.ro" />
-  <meta property="og:image" content="https://arter.ro" />
-  <meta name="twitter:image" content="https://arter.ro" />
-  <meta name="twitter:image:src" content="https://arter.ro" />
-
-
-
-
-
-<meta name="generator" content="Hugo 0.112.3">
+    <title>Kubernetes Absolute Beginner - arter.ro</title>
 
     
-
-    <link rel="canonical" href="https://arter.ro/notes/k8s-absolute-beginner/">
-    <link href="/style.min.ec0f5550672a8bc5b7c05146bb00b9c2f5864908f56c3a3f84db09146f63d439.css" rel="stylesheet">
-    <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
-
     
-    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
-    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg">
-    <link rel="shortcut icon" href="/favicon.ico">
-
-
-
-
-<link rel="manifest" href="https://arter.ro/site.webmanifest">
-
-<meta name="msapplication-config" content="/browserconfig.xml">
-<meta name="msapplication-TileColor" content="#2d89ef">
-<meta name="theme-color" content="#434648">
-
+    <meta name="description" content="Notes pertaining to the KodeKloud Kubernetes Absolute Beginner course" />
+    <meta name="author" content="[Arturo Delgado]" />
     
-    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
 
-    
-    </head>
-<body data-theme = "" class="notransition">
+    <link href="https://unpkg.com/@master/normal.css" rel="stylesheet">
+    <script src="https://unpkg.com/@master/style@1.5.0"></script>
+    <script src="https://unpkg.com/@master/styles@1.13.0"></script>
+    <script src="https://unpkg.com/master-styles-group"></script>
+    <script src="https://unpkg.com/themes.js"></script>
+    <script>window.themes = window.themes || new window.Themes()</script>
 
-<script src="/js/theme.min.c3935b0f189ca3ede59e2261839900ccfa21c8dd0a494c42a3256b4366e03032.js" integrity="sha256-w5NbDxico&#43;3lniJhg5kAzPohyN0KSUxCoyVrQ2bgMDI="></script>
-
-<div class="navbar" role="navigation">
-    <nav class="menu" aria-label="Main Navigation">
-        <a href="https://arter.ro/" class="logo">
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
-viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
-stroke-linejoin="round" class="feather feather-home">
-<title>Home</title>
-<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-<polyline points="9 22 9 12 15 12 15 22"></polyline>
-</svg>
-        </a>
-        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
-        <label for="menu-trigger">
-            <span class="menu-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
-            </span>
-        </label>
-
-        <div class="trigger">
-            <ul class="trigger-container">
-                
-                
-                <li>
-                    <a class="menu-link " href="/">
-                        Home
-                    </a>
-                    
-                </li>
-                
-                <li>
-                    <a class="menu-link " href="/notes/">
-                        Notes
-                    </a>
-                    
-                </li>
-                
-                <li>
-                    <a class="menu-link " href="/synapse/">
-                        Synapse
-                    </a>
-                    
-                </li>
-                
-                <li class="menu-separator">
-                    <span>|</span>
-                </li>
-            </ul>
-            <a id="mode" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" class="mode-sunny" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
-<title>LIGHT</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
-                <svg xmlns="http://www.w3.org/2000/svg" class="mode-moon" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
-<title>DARK</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+    <style>
+        :root {
+            --font-sans: "Inter var", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+        }
+    </style></head>
+<body class="bg:fade-84@dark font:fade-16@dark font:sans">
+    <nav class="w:full h:90 fixed bg:fade-84/.95@dark bg:white z:1000">
+    <div class="
+        h:full
+        w:full
+        max-w:1200
+        mx:auto
+        px:32
+        d:flex
+        align-items:center
+    ">
+        <div>
+            <a href="/" class="mr-3 font:extralight">
+              
+              arter.ro
+              
             </a>
         </div>
-    </nav>
-</div>
 
-<div class="wrapper post">
-    <main class="page-content" aria-label="Content">
-        <article>
-            <header class="header">
-                <h1 class="header-title">Kubernetes Absolute Beginner</h1>
+        <div class="ml:auto">
+            
+            
+            
+            
+            <a class="
+                font:semibold
+                font:fade
+                font:fade-10:hover
+                font:fade-30.active
+                px:8
+                transition:150ms;ease-in
                 
-                <div class="post-meta">
-                    <time datetime="2022-04-29T12:48:00-07:00" itemprop="datePublished"> Apr 29, 2022 </time>
-                </div>
-            </header><div class="page-content">
-                <h2 id="overview">Overview</h2>
+            " href="/notes/" title="">Notes</a>
+            
+        </div>
+    </div>
+</nav>
+<div class="d:flex flex:column@<=sm pt:90 px:24 jc:center gap:44 word-break:break-word">
+        <div class="max-w:700 w:full box:content-box">
+<article class="box:border-box pt:32">
+    <header class="mb:32">
+        <div class="font:40 font:extrabold">Kubernetes Absolute Beginner</div>
+        <div class="mt:16 f:fade-60">
+            <time>Apr 29, 2022</time>
+            </div>
+    </header><div class="
+    _:where(a):hover{text-decoration-color:fade}
+    _:where(a){text-decoration:2;underline;fade-10;_text-decoration-color:fade-70@dark}
+    _:where(blockquote){bl:5;solid;fade-76/.1;_bl:5;solid;fade-34/.1@dark}
+    _:where(code){font:90%;_v:middle}
+    _:where(code:not(.highlight_*,pre_*)){p:2;6;_r:4}
+    _:where(del){text-decoration:1;line-through;fade-68;_text-decoration-color:red-64@dark}
+    _:where(figcaption){text:14;_p:10;20;0;_width:fit;_mx:auto;_font:fade-56;_font:fade-57@dark}
+    _:where(h1){font:40;_font:extrabold}
+    _:where(h1,h2,h3)+:where(h1,h2,h3){mt:.5em}
+    _:where(h1,h2,h3,h4,h5,h6){mt:2em}
+    _:where(h2){mb:1em;_font:32}
+    _:where(h3){font:24}
+    _:where(h4){font:20}
+    _:where(h5){font:16}
+    _:where(h6){font:14}
+    _:where(li)::marker{font:fade-44;_font:fade-68@dark}
+    _:where(li){pl:.375em}
+    _:where(mark){text-decoration:1;underline;#fce016;_bg:transparent;_text-decoration-color:rgb(252;224;22/.5)@dark}
+    _:where(p,li){font:fade-76;_font:16;_line-height:1.65;_font:fade-34@dark}
+    _:where(p,pre,blockquote,figure,ul,ol,table){my:1.125em}
+    >:first-child{mt:0!}
+    _:where(pre){p:20;_r:8;_overflow:auto}
+    _:where(pre,code:not(.highlight_*)){bg:fade-2;_bg:fade-92!@dark}
+    _:where(strong,b,a,code:not(.highlight_*),mark,del){font:fade-92;_font:fade-12@dark}
+    _:where(table){width:full;_border-spacing:0}
+    _:where(td){v:baseline}
+    _:where(td,th):first-child{pl:0}
+    _:where(td,th):last-child{pr:0}
+    _:where(td,th){bb:1;solid;fade-92/.06;_p:6;_b:fade-4/.04@dark}
+    _:where(th){font:fade-78;_font:14;_text:left;_font:fade-12@dark}
+    _:where(th,p_code,li_code,a,mark){font:semibold;_font:medium@dark}
+    _:where(ul){list-style-type:disc}
+    _:where(ul,ol,blockquote){pl:1.5em}
+    _:where(video,img){max-width:full}
+    _:where(a,mark){text-underline-offset:3}
+    _:where(hr){h:2;_bg:fade-10;_bg:fade-70@dark;_my:3em}
+"><h2 id="overview">Overview</h2>
 <p>Kubernetes (K8s) was initially built by Google but is now an open-source project (CNCF).</p>
 <h3 id="containers">Containers</h3>
 <p>Containers are not a new concept and they&rsquo;ve been around for 10+ years. They exist in other forms like LXC (hard, low-level) but Docker has become the defacto standard due to the ease it brings at a higher level to create containers.</p>
@@ -145,19 +122,19 @@ stroke-linejoin="round" class="feather feather-home">
 <li>Low hardware resources; easily scale up/down</li>
 </ul>
 <h3 id="kubernetes-architecture">Kubernetes Architecture</h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">Nodes
-</span></span><span class="line"><span class="cl">-----
-</span></span><span class="line"><span class="cl">A physical / virtual worker machine where K8s is installed and containers are launched
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Nodes
+</span></span><span style="display:flex;"><span>-----
+</span></span><span style="display:flex;"><span>A physical / virtual worker machine where K8s is installed and containers are launched
 </span></span></code></pre></div><p>If the node fails, what happens? Application goes down! (╥﹏╥)
 Don&rsquo;t fear cause we have clusters!</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">Cluster
-</span></span><span class="line"><span class="cl">-----
-</span></span><span class="line"><span class="cl">Set of nodes grouped together
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Cluster
+</span></span><span style="display:flex;"><span>-----
+</span></span><span style="display:flex;"><span>Set of nodes grouped together
 </span></span></code></pre></div><p>If one node fails the application keeps chugging about as it can be accessed from the other nodes. Having multiple nodes also helps in sharing load.</p>
 <p>Cool, who&rsquo;s gonna manage all of this (the cluster)?</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">Master
-</span></span><span class="line"><span class="cl">-----
-</span></span><span class="line"><span class="cl">A node with k8s installed on it, configured as a master that watches over the nodes in the cluster.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Master
+</span></span><span style="display:flex;"><span>-----
+</span></span><span style="display:flex;"><span>A node with k8s installed on it, configured as a master that watches over the nodes in the cluster.
 </span></span></code></pre></div><p>Watches over the nodes in the cluster and is responsible for the orchestration of containrs on the worker nodes.</p>
 <h4 id="components">Components</h4>
 <p>When installing Kubernetes the following components are installed:</p>
@@ -204,38 +181,38 @@ Don&rsquo;t fear cause we have clusters!</p>
 <p>minikube is developer friendly and good for testing purposes, as it bundles all the different components into a single image, providing a pre-configured single node Kubernetes cluster provided as an ISO image.</p>
 <h2 id="kubernetes-concepts">Kubernetes Concepts</h2>
 <p>Kubernetes does not deploy containers directly on the worker nodes; instead are encapsulated into a Kubernetes object known as a <strong>Pod</strong>.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">Pod
-</span></span><span class="line"><span class="cl">-----
-</span></span><span class="line"><span class="cl">Single instance of an application, the smallest object that can be created in Kubernetes.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Pod
+</span></span><span style="display:flex;"><span>-----
+</span></span><span style="display:flex;"><span>Single instance of an application, the smallest object that can be created in Kubernetes.
 </span></span></code></pre></div><p>Pods share a 1:1 relation with container images running the application. If you need to scale up, you add more pods and remove pods to scale down.</p>
 <p>Pods can contain multiple images, doesn&rsquo;t have to be just one. For example, in the case of needing a helper container to go along with the application container.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># Creating a Pod with image pulled from Dockerhub</span>
-</span></span><span class="line"><span class="cl">kubectl run nginx --image nginx</span></span></code></pre></div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">pod/nginx created</span></span></code></pre></div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># View Pods</span>
-</span></span><span class="line"><span class="cl">kubectl get pods</span></span></code></pre></div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">NAME                     READY   STATUS    RESTARTS      AGE
-</span></span><span class="line"><span class="cl">nginx                    1/1     Running   <span class="m">0</span>             5s</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e"># Creating a Pod with image pulled from Dockerhub</span>
+</span></span><span style="display:flex;"><span>kubectl run nginx --image nginx</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>pod/nginx created</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e"># View Pods</span>
+</span></span><span style="display:flex;"><span>kubectl get pods</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>NAME                     READY   STATUS    RESTARTS      AGE
+</span></span><span style="display:flex;"><span>nginx                    1/1     Running   <span style="color:#ae81ff">0</span>             5s</span></span></code></pre></div>
 <h2 id="pods-replicasets-and-deployments">PODs, ReplicaSets and Deployments</h2>
 <h3 id="pods-with-yaml">Pods with YAML</h3>
 <p>Kubernetes uses YAML files as inputs for the creation of objects and follows the following structure for the four top level fields:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="c"># pod-definition.yaml</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l">v1</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l">Pod</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">metadata</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">myapp-pod</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">labels</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l">myapp</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">front-end</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">spec</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">containers</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">nginx-container</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">nginx</span></span></span></code></pre></div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># Command to create object using YAML</span>
-</span></span><span class="line"><span class="cl">kubectl create -f pod-definition.yaml</span></span></code></pre></div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">pod/myapp-pod created</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#75715e"># pod-definition.yaml</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">v1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">Pod</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">myapp-pod</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">labels</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">app</span>: <span style="color:#ae81ff">myapp</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">type</span>: <span style="color:#ae81ff">front-end</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">containers</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">nginx-container</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">image</span>: <span style="color:#ae81ff">nginx</span></span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e"># Command to create object using YAML</span>
+</span></span><span style="display:flex;"><span>kubectl create -f pod-definition.yaml</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>pod/myapp-pod created</span></span></code></pre></div>
 <p><strong>Example of Kubernetes objects and their versions:</strong></p>
-<div class="ox-hugo-table table-striped table-hover">
+<!-- raw HTML omitted -->
 <table>
 <thead>
 <tr>
@@ -262,148 +239,148 @@ Don&rsquo;t fear cause we have clusters!</p>
 </tr>
 </tbody>
 </table>
-</div>
+<!-- raw HTML omitted -->
 <p><strong>Four common top level fields that reside in a manifest file, YAML data type is defined within brackets []</strong>:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">apiVersion [string]
-</span></span><span class="line"><span class="cl">-----
-</span></span><span class="line"><span class="cl">Defines the api version of Kubernetes to use to create the object.
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">kind [string]
-</span></span><span class="line"><span class="cl">-----
-</span></span><span class="line"><span class="cl">Refers to the type of object to be created.
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">metadata [dictionary]
-</span></span><span class="line"><span class="cl">-----
-</span></span><span class="line"><span class="cl">Definition data of the object like name, labels, etc. To note, you can only specify properties that Kubernetes expects under metadata, for labels it can be a user defined key-value pair.
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">spec [dictionary]
-</span></span><span class="line"><span class="cl">-----
-</span></span><span class="line"><span class="cl">Defines the specification for the object kind to be created.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>apiVersion [string]
+</span></span><span style="display:flex;"><span>-----
+</span></span><span style="display:flex;"><span>Defines the api version of Kubernetes to use to create the object.
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>kind [string]
+</span></span><span style="display:flex;"><span>-----
+</span></span><span style="display:flex;"><span>Refers to the type of object to be created.
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>metadata [dictionary]
+</span></span><span style="display:flex;"><span>-----
+</span></span><span style="display:flex;"><span>Definition data of the object like name, labels, etc. To note, you can only specify properties that Kubernetes expects under metadata, for labels it can be a user defined key-value pair.
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>spec [dictionary]
+</span></span><span style="display:flex;"><span>-----
+</span></span><span style="display:flex;"><span>Defines the specification for the object kind to be created.
 </span></span></code></pre></div><h3 id="replicationcontrollers-and-replicasets">ReplicationControllers and ReplicaSets</h3>
 <p>Controllers are the brains behind Kubernetes, processes that monitor Kubernetes objects.</p>
 <p>ReplicationController / ReplicaSets helps us manage multiple instances of a single pod. Say you have an application in a pod and that goes ლ(ಠ益ಠ)ლ, you&rsquo;d want to have another instance running so users don&rsquo;t lose access to the application.</p>
 <p>Even if using one instance, the ReplicationController / ReplicaSet will ensure that if the single pod goes unhealthy, a new pod instance is brought up. It makes it so our application has high availability, which also helps with load balancing and scaling. If the load increases we can spin up additional instances or even expand to new nodes within the cluster if resources start to become limited.</p>
 <h4 id="replicationcontroller">ReplicationController</h4>
 <p>ReplicationController is an older technology which will be replaced by ReplicaSet.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="c"># rc-definition.yaml</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l">v1</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l">ReplicationController</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">metadata</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">myapp-rc</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">labels</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l">myapp</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">front-end</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">spec</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">template</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">metadata</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">myapp-pod</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">labels</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l">myapp</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">front-end</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">spec</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">containers</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">nginx-container</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">nginx</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">replicas</span><span class="p">:</span><span class="w"> </span><span class="m">3</span></span></span></code></pre></div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># Command to create the replication controller</span>
-</span></span><span class="line"><span class="cl">kubectl create -f rc-definition.yaml</span></span></code></pre></div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">replicationcontroller/myapp-rc created</span></span></code></pre></div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># Command to get replication controllers</span>
-</span></span><span class="line"><span class="cl">kubectl get replicationcontroller</span></span></code></pre></div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">NAME       DESIRED   CURRENT   READY   AGE
-</span></span><span class="line"><span class="cl">myapp-rc   <span class="m">3</span>         <span class="m">3</span>         <span class="m">3</span>       9s</span></span></code></pre></div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># Command to get pods</span>
-</span></span><span class="line"><span class="cl">kubectl get po</span></span></code></pre></div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">NAME                     READY   STATUS    RESTARTS        AGE
-</span></span><span class="line"><span class="cl">myapp-rc-bdrmp           1/1     Running   <span class="m">0</span>               15s
-</span></span><span class="line"><span class="cl">myapp-rc-cxcd5           1/1     Running   <span class="m">0</span>               15s
-</span></span><span class="line"><span class="cl">myapp-rc-xtrnp           1/1     Running   <span class="m">0</span>               15s</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#75715e"># rc-definition.yaml</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">v1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">ReplicationController</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">myapp-rc</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">labels</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">app</span>: <span style="color:#ae81ff">myapp</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">type</span>: <span style="color:#ae81ff">front-end</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">template</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">name</span>: <span style="color:#ae81ff">myapp-pod</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">labels</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">app</span>: <span style="color:#ae81ff">myapp</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">type</span>: <span style="color:#ae81ff">front-end</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">containers</span>:
+</span></span><span style="display:flex;"><span>        - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">nginx-container</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">image</span>: <span style="color:#ae81ff">nginx</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">replicas</span>: <span style="color:#ae81ff">3</span></span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e"># Command to create the replication controller</span>
+</span></span><span style="display:flex;"><span>kubectl create -f rc-definition.yaml</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>replicationcontroller/myapp-rc created</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e"># Command to get replication controllers</span>
+</span></span><span style="display:flex;"><span>kubectl get replicationcontroller</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>NAME       DESIRED   CURRENT   READY   AGE
+</span></span><span style="display:flex;"><span>myapp-rc   <span style="color:#ae81ff">3</span>         <span style="color:#ae81ff">3</span>         <span style="color:#ae81ff">3</span>       9s</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e"># Command to get pods</span>
+</span></span><span style="display:flex;"><span>kubectl get po</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>NAME                     READY   STATUS    RESTARTS        AGE
+</span></span><span style="display:flex;"><span>myapp-rc-bdrmp           1/1     Running   <span style="color:#ae81ff">0</span>               15s
+</span></span><span style="display:flex;"><span>myapp-rc-cxcd5           1/1     Running   <span style="color:#ae81ff">0</span>               15s
+</span></span><span style="display:flex;"><span>myapp-rc-xtrnp           1/1     Running   <span style="color:#ae81ff">0</span>               15s</span></span></code></pre></div>
 <h4 id="replicaset">ReplicaSet</h4>
 <p>Recommended way to setup replication.</p>
 <p>Aside from the <code>apiVersion</code> and the <code>kind</code> differing from the YAML construct of the ReplicaController, a property that must be defined is a <code>selector</code>.</p>
 <p>A <code>selector</code> defines what pods fall under the ReplicaSet; you may notice pods are defined in the <code>template</code> of the ReplicaSet, but a ReplicaSet can manage pods <em>not</em> defined in the YAML configuration, like pods created prior to the ReplicaSet.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="c"># replicaset-definition.yaml</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l">apps/v1</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l">ReplicaSet</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">metadata</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">myapp-replicaset</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">labels</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l">myapp</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">front-end</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">spec</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">template</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">metadata</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">myapp-pod</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">labels</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l">myapp</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">front-end</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">spec</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">containers</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">nginx-container</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">nginx</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">replicas</span><span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">selector</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">matchLabels</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">front-end</span></span></span></code></pre></div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># Command to create the replica set</span>
-</span></span><span class="line"><span class="cl">kubectl create -f replicaset-definition.yaml</span></span></code></pre></div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">replicaset.apps/myapp-replicaset created</span></span></code></pre></div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># Command to get replica sets</span>
-</span></span><span class="line"><span class="cl">kubectl get replicaset</span></span></code></pre></div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">NAME               DESIRED   CURRENT   READY   AGE
-</span></span><span class="line"><span class="cl">myapp-replicaset   <span class="m">3</span>         <span class="m">3</span>         <span class="m">3</span>       25s</span></span></code></pre></div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># Command to get pods</span>
-</span></span><span class="line"><span class="cl">kubectl get po</span></span></code></pre></div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">NAME                     READY   STATUS    RESTARTS   AGE
-</span></span><span class="line"><span class="cl">myapp-replicaset-lxmnh   1/1     Running   <span class="m">0</span>          31s
-</span></span><span class="line"><span class="cl">myapp-replicaset-q8mdz   1/1     Running   <span class="m">0</span>          31s
-</span></span><span class="line"><span class="cl">myapp-replicaset-vsjqr   1/1     Running   <span class="m">0</span>          31s</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#75715e"># replicaset-definition.yaml</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">apps/v1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">ReplicaSet</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">myapp-replicaset</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">labels</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">app</span>: <span style="color:#ae81ff">myapp</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">type</span>: <span style="color:#ae81ff">front-end</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">template</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">name</span>: <span style="color:#ae81ff">myapp-pod</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">labels</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">app</span>: <span style="color:#ae81ff">myapp</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">type</span>: <span style="color:#ae81ff">front-end</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">containers</span>:
+</span></span><span style="display:flex;"><span>        - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">nginx-container</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">image</span>: <span style="color:#ae81ff">nginx</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">replicas</span>: <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">selector</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">matchLabels</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">type</span>: <span style="color:#ae81ff">front-end</span></span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e"># Command to create the replica set</span>
+</span></span><span style="display:flex;"><span>kubectl create -f replicaset-definition.yaml</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>replicaset.apps/myapp-replicaset created</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e"># Command to get replica sets</span>
+</span></span><span style="display:flex;"><span>kubectl get replicaset</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>NAME               DESIRED   CURRENT   READY   AGE
+</span></span><span style="display:flex;"><span>myapp-replicaset   <span style="color:#ae81ff">3</span>         <span style="color:#ae81ff">3</span>         <span style="color:#ae81ff">3</span>       25s</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e"># Command to get pods</span>
+</span></span><span style="display:flex;"><span>kubectl get po</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>NAME                     READY   STATUS    RESTARTS   AGE
+</span></span><span style="display:flex;"><span>myapp-replicaset-lxmnh   1/1     Running   <span style="color:#ae81ff">0</span>          31s
+</span></span><span style="display:flex;"><span>myapp-replicaset-q8mdz   1/1     Running   <span style="color:#ae81ff">0</span>          31s
+</span></span><span style="display:flex;"><span>myapp-replicaset-vsjqr   1/1     Running   <span style="color:#ae81ff">0</span>          31s</span></span></code></pre></div>
 <p>The <code>template</code> section is required in case of a pod failure; ReplicaSet needs to create a new one to keep within the replicas defined and to do so the ReplicaSet <code>template</code> section is required.</p>
 <p><strong>Scaling</strong></p>
 <p>There are three ways to scale a ReplicaSet if necessary:</p>
-<p><strong>FIRST METHOD</strong><br />
+<p><strong>FIRST METHOD</strong><!-- raw HTML omitted -->
 Edit the definition file and edit the <code>replicas</code> property and run the <code>kubectl replace</code> command to update the ReplicaSet</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="c"># replicaset-definition.yaml</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l">apps/v1</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l">ReplicaSet</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">metadata</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">myapp-replicaset</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">labels</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l">myapp</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">front-end</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">spec</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">template</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">metadata</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">myapp-pod</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">labels</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l">myapp</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">front-end</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">spec</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">containers</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">nginx-container</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">nginx</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">replicas</span><span class="p">:</span><span class="w"> </span><span class="m">10</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">selector</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">matchLabels</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">front-end</span></span></span></code></pre></div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">kubectl replace -f replicaset-definition.yaml</span></span></code></pre></div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">replicaset.apps/myapp-replicaset replaced</span></span></code></pre></div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">kubectl get replicaset</span></span></code></pre></div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">NAME               DESIRED   CURRENT   READY   AGE
-</span></span><span class="line"><span class="cl">myapp-replicaset   <span class="m">10</span>        <span class="m">10</span>        <span class="m">10</span>      6m18s</span></span></code></pre></div>
-<p><strong>SECOND METHOD</strong><br />
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#75715e"># replicaset-definition.yaml</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">apps/v1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">ReplicaSet</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">myapp-replicaset</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">labels</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">app</span>: <span style="color:#ae81ff">myapp</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">type</span>: <span style="color:#ae81ff">front-end</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">template</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">name</span>: <span style="color:#ae81ff">myapp-pod</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">labels</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">app</span>: <span style="color:#ae81ff">myapp</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">type</span>: <span style="color:#ae81ff">front-end</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">containers</span>:
+</span></span><span style="display:flex;"><span>        - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">nginx-container</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">image</span>: <span style="color:#ae81ff">nginx</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">replicas</span>: <span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">selector</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">matchLabels</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">type</span>: <span style="color:#ae81ff">front-end</span></span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>kubectl replace -f replicaset-definition.yaml</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>replicaset.apps/myapp-replicaset replaced</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>kubectl get replicaset</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>NAME               DESIRED   CURRENT   READY   AGE
+</span></span><span style="display:flex;"><span>myapp-replicaset   <span style="color:#ae81ff">10</span>        <span style="color:#ae81ff">10</span>        <span style="color:#ae81ff">10</span>      6m18s</span></span></code></pre></div>
+<p><strong>SECOND METHOD</strong><!-- raw HTML omitted -->
 Running the <code>kubectl scale</code> command and referencing how many replicas are wanted and to which definition file / ReplicaSet name to apply</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># Definition File</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># Does not modify the original value in the file</span>
-</span></span><span class="line"><span class="cl">kubectl scale --replicas <span class="m">6</span> -f replicaset-definition.yaml</span></span></code></pre></div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">replicaset.apps/myapp-replicaset scaled</span></span></code></pre></div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">kubectl get replicaset</span></span></code></pre></div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">NAME               DESIRED   CURRENT   READY   AGE
-</span></span><span class="line"><span class="cl">myapp-replicaset   <span class="m">6</span>         <span class="m">6</span>         <span class="m">6</span>       6m28s</span></span></code></pre></div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># ReplicaSet Name</span>
-</span></span><span class="line"><span class="cl">kubectl scale --replicas <span class="m">2</span> replicaset myapp-replicaset</span></span></code></pre></div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">replicaset.apps/myapp-replicaset scaled</span></span></code></pre></div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">kubectl get replicaset</span></span></code></pre></div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">NAME               DESIRED   CURRENT   READY   AGE
-</span></span><span class="line"><span class="cl">myapp-replicaset   <span class="m">2</span>         <span class="m">2</span>         <span class="m">2</span>       8m23s</span></span></code></pre></div>
-<p><strong>THIRD METHOD</strong><br />
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e"># Definition File</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Does not modify the original value in the file</span>
+</span></span><span style="display:flex;"><span>kubectl scale --replicas <span style="color:#ae81ff">6</span> -f replicaset-definition.yaml</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>replicaset.apps/myapp-replicaset scaled</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>kubectl get replicaset</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>NAME               DESIRED   CURRENT   READY   AGE
+</span></span><span style="display:flex;"><span>myapp-replicaset   <span style="color:#ae81ff">6</span>         <span style="color:#ae81ff">6</span>         <span style="color:#ae81ff">6</span>       6m28s</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e"># ReplicaSet Name</span>
+</span></span><span style="display:flex;"><span>kubectl scale --replicas <span style="color:#ae81ff">2</span> replicaset myapp-replicaset</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>replicaset.apps/myapp-replicaset scaled</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>kubectl get replicaset</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>NAME               DESIRED   CURRENT   READY   AGE
+</span></span><span style="display:flex;"><span>myapp-replicaset   <span style="color:#ae81ff">2</span>         <span style="color:#ae81ff">2</span>         <span style="color:#ae81ff">2</span>       8m23s</span></span></code></pre></div>
+<p><strong>THIRD METHOD</strong><!-- raw HTML omitted -->
 Can be setup by load &ndash; but too advanced for this primer ༼☯﹏☯༽</p>
 <p><strong>Labels and Selectors</strong></p>
 <p>It is the key to help in managing the many different resources that are available within Kubernetes. In this instance, we may have hundreds of pods deployed and if we wish to monitor them via a ReplicationController / ReplicaSet we can do so via the labels we define on the pods at creation.</p>
@@ -416,97 +393,75 @@ Can be setup by load &ndash; but too advanced for this primer ༼☯﹏☯༽</p
 <li>Allowing to scale, allocate resources and other actions without having it done immediately but in steps (pausing the environment, make the changes and resume the environment so it happens in sync)</li>
 </ul>
 <p>The following is an example of a deployment manifest file:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="c"># deployment-definition.yaml</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l">apps/v1</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l">Deployment</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">metadata</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">myapp-deployment</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">labels</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l">myapp</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">front-end</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">spec</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">replicas</span><span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">selector</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">matchLabels</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">front-end</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">template</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">metadata</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">myapp-pod</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">labels</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l">myapp</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">front-end</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">spec</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">containers</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">nginx-container</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">nginx</span></span></span></code></pre></div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># Command to create the deployment from the above manifest file</span>
-</span></span><span class="line"><span class="cl">kubectl create -f deployment-definition.yaml</span></span></code></pre></div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">deployment.apps/myapp-deployment created</span></span></code></pre></div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># Command to get all deployments</span>
-</span></span><span class="line"><span class="cl">kubectl get deployments</span></span></code></pre></div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">NAME               READY   UP-TO-DATE   AVAILABLE   AGE
-</span></span><span class="line"><span class="cl">myapp-deployment   3/3     <span class="m">3</span>            <span class="m">3</span>           4s</span></span></code></pre></div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># Command to describe the deployment</span>
-</span></span><span class="line"><span class="cl">kubectl describe deployment myapp-deployment</span></span></code></pre></div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">Name:                   myapp-deployment
-</span></span><span class="line"><span class="cl">Namespace:              default
-</span></span><span class="line"><span class="cl">CreationTimestamp:      Wed, <span class="m">27</span> Apr <span class="m">2022</span> 21:42:15 -0700
-</span></span><span class="line"><span class="cl">Labels:                 <span class="nv">app</span><span class="o">=</span>myapp
-</span></span><span class="line"><span class="cl">                        <span class="nv">type</span><span class="o">=</span>front-end
-</span></span><span class="line"><span class="cl">Annotations:            deployment.kubernetes.io/revision: <span class="m">1</span>
-</span></span><span class="line"><span class="cl">Selector:               <span class="nv">type</span><span class="o">=</span>front-end
-</span></span><span class="line"><span class="cl">Replicas:               <span class="m">3</span> desired <span class="p">|</span> <span class="m">3</span> updated <span class="p">|</span> <span class="m">3</span> total <span class="p">|</span> <span class="m">3</span> available <span class="p">|</span> <span class="m">0</span> unavailable
-</span></span><span class="line"><span class="cl">StrategyType:           RollingUpdate
-</span></span><span class="line"><span class="cl">MinReadySeconds:        <span class="m">0</span>
-</span></span><span class="line"><span class="cl">RollingUpdateStrategy:  25% max unavailable, 25% max surge
-</span></span><span class="line"><span class="cl">Pod Template:
-</span></span><span class="line"><span class="cl">  Labels:  <span class="nv">app</span><span class="o">=</span>myapp
-</span></span><span class="line"><span class="cl">           <span class="nv">type</span><span class="o">=</span>front-end
-</span></span><span class="line"><span class="cl">  Containers:
-</span></span><span class="line"><span class="cl">   nginx-container:
-</span></span><span class="line"><span class="cl">    Image:        nginx
-</span></span><span class="line"><span class="cl">    Port:         &lt;none&gt;
-</span></span><span class="line"><span class="cl">    Host Port:    &lt;none&gt;
-</span></span><span class="line"><span class="cl">    Environment:  &lt;none&gt;
-</span></span><span class="line"><span class="cl">    Mounts:       &lt;none&gt;
-</span></span><span class="line"><span class="cl">  Volumes:        &lt;none&gt;
-</span></span><span class="line"><span class="cl">Conditions:
-</span></span><span class="line"><span class="cl">  Type           Status  Reason
-</span></span><span class="line"><span class="cl">  ----           ------  ------
-</span></span><span class="line"><span class="cl">  Available      True    MinimumReplicasAvailable
-</span></span><span class="line"><span class="cl">  Progressing    True    NewReplicaSetAvailable
-</span></span><span class="line"><span class="cl">OldReplicaSets:  &lt;none&gt;
-</span></span><span class="line"><span class="cl">NewReplicaSet:   myapp-replicaset <span class="o">(</span>3/3 replicas created<span class="o">)</span>
-</span></span><span class="line"><span class="cl">Events:          &lt;none&gt;</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#75715e"># deployment-definition.yaml</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">apps/v1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">Deployment</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">myapp-deployment</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">labels</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">app</span>: <span style="color:#ae81ff">myapp</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">type</span>: <span style="color:#ae81ff">front-end</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">replicas</span>: <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">selector</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">matchLabels</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">type</span>: <span style="color:#ae81ff">front-end</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">template</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">name</span>: <span style="color:#ae81ff">myapp-pod</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">labels</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">app</span>: <span style="color:#ae81ff">myapp</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">type</span>: <span style="color:#ae81ff">front-end</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">containers</span>:
+</span></span><span style="display:flex;"><span>        - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">nginx-container</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">image</span>: <span style="color:#ae81ff">nginx</span></span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e"># Command to create the deployment from the above manifest file</span>
+</span></span><span style="display:flex;"><span>kubectl create -f deployment-definition.yaml</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>deployment.apps/myapp-deployment created</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e"># Command to get all deployments</span>
+</span></span><span style="display:flex;"><span>kubectl get deployments</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>NAME               READY   UP-TO-DATE   AVAILABLE   AGE
+</span></span><span style="display:flex;"><span>myapp-deployment   3/3     <span style="color:#ae81ff">3</span>            <span style="color:#ae81ff">3</span>           4s</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e"># Command to describe the deployment</span>
+</span></span><span style="display:flex;"><span>kubectl describe deployment myapp-deployment</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>Name:                   myapp-deployment
+</span></span><span style="display:flex;"><span>Namespace:              default
+</span></span><span style="display:flex;"><span>CreationTimestamp:      Wed, <span style="color:#ae81ff">27</span> Apr <span style="color:#ae81ff">2022</span> 21:42:15 -0700
+</span></span><span style="display:flex;"><span>Labels:                 app<span style="color:#f92672">=</span>myapp
+</span></span><span style="display:flex;"><span>                        type<span style="color:#f92672">=</span>front-end
+</span></span><span style="display:flex;"><span>Annotations:            deployment.kubernetes.io/revision: <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>Selector:               type<span style="color:#f92672">=</span>front-end
+</span></span><span style="display:flex;"><span>Replicas:               <span style="color:#ae81ff">3</span> desired | <span style="color:#ae81ff">3</span> updated | <span style="color:#ae81ff">3</span> total | <span style="color:#ae81ff">3</span> available | <span style="color:#ae81ff">0</span> unavailable
+</span></span><span style="display:flex;"><span>StrategyType:           RollingUpdate
+</span></span><span style="display:flex;"><span>MinReadySeconds:        <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>RollingUpdateStrategy:  25% max unavailable, 25% max surge
+</span></span><span style="display:flex;"><span>Pod Template:
+</span></span><span style="display:flex;"><span>  Labels:  app<span style="color:#f92672">=</span>myapp
+</span></span><span style="display:flex;"><span>           type<span style="color:#f92672">=</span>front-end
+</span></span><span style="display:flex;"><span>  Containers:
+</span></span><span style="display:flex;"><span>   nginx-container:
+</span></span><span style="display:flex;"><span>    Image:        nginx
+</span></span><span style="display:flex;"><span>    Port:         &lt;none&gt;
+</span></span><span style="display:flex;"><span>    Host Port:    &lt;none&gt;
+</span></span><span style="display:flex;"><span>    Environment:  &lt;none&gt;
+</span></span><span style="display:flex;"><span>    Mounts:       &lt;none&gt;
+</span></span><span style="display:flex;"><span>  Volumes:        &lt;none&gt;
+</span></span><span style="display:flex;"><span>Conditions:
+</span></span><span style="display:flex;"><span>  Type           Status  Reason
+</span></span><span style="display:flex;"><span>  ----           ------  ------
+</span></span><span style="display:flex;"><span>  Available      True    MinimumReplicasAvailable
+</span></span><span style="display:flex;"><span>  Progressing    True    NewReplicaSetAvailable
+</span></span><span style="display:flex;"><span>OldReplicaSets:  &lt;none&gt;
+</span></span><span style="display:flex;"><span>NewReplicaSet:   myapp-replicaset <span style="color:#f92672">(</span>3/3 replicas created<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Events:          &lt;none&gt;</span></span></code></pre></div>
 <h4 id="update-and-rollback">Update and Rollback</h4>
-
-            </div>
-        </article></main>
-</div>
-<footer class="footer">
-    <span class="footer_item"> </span>
-    &nbsp;
-
-    <div class="footer_social-icons">
-</div>
-    <small class="footer_copyright">
-        © 2023 .
-        Powered by <a href="https://github.com/hugo-sid/hugo-blog-awesome" target="_blank" rel="noreferrer noopener">Hugo blog awesome</a>
-        theme on
-        <a href="https://gohugo.io" target="_blank" rel="noreferrer noopener">Hugo</a>.
-    </small>
-</footer>
-
-
-
-
-
-
-
-    
-    <script src="https://arter.ro/js/main.min.4ee188e1744c19816e95a540b2650ed9f033ea0371e74eac8e717355cfca8741.js" integrity="sha256-TuGI4XRMGYFulaVAsmUO2fAz6gNx506sjnFzVc/Kh0E="></script>
-
-    
-
+</div></article>
+<footer class="py:24">
+    <div class="f:fade-30 f:14 mb:8"></div>
+    <div class="f:fade-60 f:12">Theme <a class="f:bold" href="https://github.com/serkodev/holy" _target="_blank">Holy</a></div>
+</footer></div>
+    </div>
 </body>
+
 </html>
