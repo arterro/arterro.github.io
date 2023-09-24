@@ -3,11 +3,11 @@
 <meta http-equiv="content-type" content="text/html">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title itemprop="name">kubernetes | know.ethicz</title>
-<meta property="og:title" content="kubernetes | know.ethicz" />
-<meta name="twitter:title" content="kubernetes | know.ethicz" />
-<meta itemprop="name" content="kubernetes | know.ethicz" />
-<meta name="application-name" content="kubernetes | know.ethicz" />
+<title itemprop="name">Behringer UV1 Audio Stuttering | know.ethicz</title>
+<meta property="og:title" content="Behringer UV1 Audio Stuttering | know.ethicz" />
+<meta name="twitter:title" content="Behringer UV1 Audio Stuttering | know.ethicz" />
+<meta itemprop="name" content="Behringer UV1 Audio Stuttering | know.ethicz" />
+<meta name="application-name" content="Behringer UV1 Audio Stuttering | know.ethicz" />
 <meta property="og:site_name" content="know.ethicz" />
 
 <meta name="description" content="Thoughts and whatnot -- and I guess organized thoughts when taking a course...">
@@ -33,9 +33,7 @@
 
     
 
-    <link rel="canonical" href="https://ethi.cz/tags/kubernetes/">
-    <link href="/tags/kubernetes/index.xml" rel="alternate" type="application/rss+xml" title="know.ethicz">
-    <link href="/tags/kubernetes/index.xml" rel="feed" type="application/rss+xml" title="know.ethicz">
+    <link rel="canonical" href="https://ethi.cz/synapses/behringer-uv1-linux-stutter/">
     <link href="/style.min.41175b050032d7b140ed7b503e6724d0166055787dc68ff6fb7e4d5d7b9aebf1.css" rel="stylesheet">
     <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
 
@@ -101,7 +99,7 @@ stroke-linejoin="round" class="feather feather-home">
                 </li>
                 
                 <li>
-                    <a class="menu-link " href="/synapses/">
+                    <a class="menu-link active" href="/synapses/">
                         Synapses
                     </a>
                     
@@ -120,37 +118,51 @@ stroke-linejoin="round" class="feather feather-home">
         </div>
     </nav>
 </div>
-<div class="wrapper list-page">
-    <header class="header">
-        <h1 class="header-title center">kubernetes</h1>
-    </header>
+
+<div class="wrapper post">
     <main class="page-content" aria-label="Content">
-        
-        
-        <h2 class="post-year">2022</h2>
+        <article>
+            <header class="header">
+                <h1 class="header-title">Behringer UV1 Audio Stuttering</h1>
+                
+                <div class="post-meta">
+                    <time datetime="2022-05-31T22:42:54-07:00" itemprop="datePublished"> 31 May 2022 </time>
+                </div>
+            </header>
+            <details class="toc">
+                <summary><b>Table of Contents</b></summary>
+                <nav id="TableOfContents"></nav>
+            </details><div class="page-content">
+                <p><strong>I use arch btw</strong> &ndash; we know the meme&hellip; but it&rsquo;s a nice distro in my opinion to get a bit more linux hands-on without being as advanced as Gentoo.</p>
+<p>Digressing, as of the date of this post it seems the Behringer UV1 audio interface is not incorporated into the <code>5.19.8-arch1-1</code> kernel and results in de-syncs and stuttering every second or so, with the following reported in <code>dmesg</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">sudo dmesg -T <span class="p">|</span> grep -i usb</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="o">[</span>14749.453470<span class="o">]</span> usb 5-2: New USB device found, <span class="nv">idVendor</span><span class="o">=</span>1397, <span class="nv">idProduct</span><span class="o">=</span>0510, <span class="nv">bcdDevice</span><span class="o">=</span> 1.00
+</span></span><span class="line"><span class="cl"><span class="o">[</span>14749.453472<span class="o">]</span> usb 5-2: New USB device strings: <span class="nv">Mfr</span><span class="o">=</span>1, <span class="nv">Product</span><span class="o">=</span>2, <span class="nv">SerialNumber</span><span class="o">=</span><span class="m">3</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>14749.453473<span class="o">]</span> usb 5-2: Product: UV1
+</span></span><span class="line"><span class="cl"><span class="o">[</span>14749.453474<span class="o">]</span> usb 5-2: Manufacturer: Behringer
+</span></span><span class="line"><span class="cl"><span class="o">[</span>14749.534720<span class="o">]</span> usb 5-2: clock <span class="nb">source</span> <span class="m">41</span> is not valid, cannot use
+</span></span><span class="line"><span class="cl"><span class="o">[</span>14749.597974<span class="o">]</span> usb 5-2: clock <span class="nb">source</span> <span class="m">41</span> is not valid, cannot use
+</span></span><span class="line"><span class="cl"><span class="o">[</span>14749.601222<span class="o">]</span> usb 5-2: clock <span class="nb">source</span> <span class="m">41</span> is not valid, cannot use
+</span></span><span class="line"><span class="cl"><span class="o">[</span>14749.604472<span class="o">]</span> usb 5-2: clock <span class="nb">source</span> <span class="m">41</span> is not valid, cannot use
+</span></span><span class="line"><span class="cl"><span class="o">[</span>14749.607723<span class="o">]</span> usb 5-2: clock <span class="nb">source</span> <span class="m">41</span> is not valid, cannot use
+</span></span><span class="line"><span class="cl"><span class="o">[</span>14749.610972<span class="o">]</span> usb 5-2: clock <span class="nb">source</span> <span class="m">41</span> is not valid, cannot use
+</span></span><span class="line"><span class="cl"><span class="o">[</span>14749.614475<span class="o">]</span> usb 5-2: clock <span class="nb">source</span> <span class="m">41</span> is not valid, cannot use
+</span></span><span class="line"><span class="cl"><span class="o">[</span>14749.617723<span class="o">]</span> usb 5-2: clock <span class="nb">source</span> <span class="m">41</span> is not valid, cannot use
+</span></span><span class="line"><span class="cl"><span class="o">[</span>14749.620973<span class="o">]</span> usb 5-2: clock <span class="nb">source</span> <span class="m">41</span> is not valid, cannot use
+</span></span><span class="line"><span class="cl"><span class="o">[</span>15258.125221<span class="o">]</span> usb 1-5: reset full-speed USB device number <span class="m">2</span> using xhci_hcd
+</span></span><span class="line"><span class="cl"><span class="o">[</span>16477.408189<span class="o">]</span> usb 1-5: reset full-speed USB device number <span class="m">2</span> using xhci_hcd</span></span></code></pre></div>
+<p>Went hard into Googling to see if anyone had this issue and a solution&hellip; and I was finding nothing of value (╯°□°)╯︵ ┻━┻. It wasn&rsquo;t until I ran into this <a href="https://www.reddit.com/r/linuxaudio/comments/sim11g/comment/hv9qhqx/?utm_source=share&amp;utm_medium=web2x&amp;context=3">comment on Reddit</a>, specifying a different model than the one I am using but the same make and reported symptoms. Fired up <code>kitty</code> and created the required conf file for modprobe to load.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">sudo vim /etc/modprobe.d/uv1.conf</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># uv1.conf</span>
+</span></span><span class="line"><span class="cl">options snd_usb_audio <span class="nv">implicit_fb</span><span class="o">=</span><span class="m">1</span></span></span></code></pre></div>
+<p>Restarted my system, hoped for the best, and problems gone!</p>
+<hr>
+<p><em>synapsed while listening to How Ya Do Dat by Young Bleed</em></p>
 
-        
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/notes/k8s-absolute-beginner/">Kubernetes Absolute Beginner</a>
-    </h4>
-    
-    
-    <time class="post-item-meta" datetime="2022-04-29T12:48:00-0700">
-        29 Apr 2022
-    </time>
-</article>
-
-
-         
-
-         
-
-    </main>
-</div><footer class="footer">
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
     <span class="footer_item"> </span>
     &nbsp;
 

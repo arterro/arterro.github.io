@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>audio on know.ethicz</title>
-    <link>https://ethi.cz/tags/audio/</link>
-    <description>Recent content in audio on know.ethicz</description>
+    <title>Synapses on know.ethicz</title>
+    <link>https://ethi.cz/synapses/</link>
+    <description>Recent content in Synapses on know.ethicz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 31 May 2022 22:42:54 -0700</lastBuildDate><atom:link href="https://ethi.cz/tags/audio/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 31 May 2022 22:42:54 -0700</lastBuildDate><atom:link href="https://ethi.cz/synapses/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Behringer UV1 Audio Stuttering</title>
       <link>https://ethi.cz/synapses/behringer-uv1-linux-stutter/</link>

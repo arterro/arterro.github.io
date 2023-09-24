@@ -1,64 +1,63 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>arter.ro</title>
-    <link>https://arter.ro/</link>
-    <description>Recent content on arter.ro</description>
+    <title>know.ethicz</title>
+    <link>https://ethi.cz/</link>
+    <description>Recent content on know.ethicz</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <copyright>Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 28 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://arter.ro/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Wed, 28 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ethi.cz/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Google Cybersecurity Professional Certificate - Course 01 | Week 04</title>
-      <link>https://arter.ro/notes/google-cybersec-cert-crse-01-wk-04/</link>
+      <link>https://ethi.cz/notes/google-cybersec-cert-crse-01-wk-04/</link>
       <pubDate>Wed, 28 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://arter.ro/notes/google-cybersec-cert-crse-01-wk-04/</guid>
+      <guid>https://ethi.cz/notes/google-cybersec-cert-crse-01-wk-04/</guid>
       <description>Week Four of Google&amp;rsquo;s Cybersecurity Certification, Foundations of Cybersecurity</description>
     </item>
     
     <item>
       <title>Google Cybersecurity Professional Certificate - Course 01 | Week 03</title>
-      <link>https://arter.ro/notes/google-cybersec-cert-crse-01-wk-03/</link>
+      <link>https://ethi.cz/notes/google-cybersec-cert-crse-01-wk-03/</link>
       <pubDate>Mon, 05 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://arter.ro/notes/google-cybersec-cert-crse-01-wk-03/</guid>
+      <guid>https://ethi.cz/notes/google-cybersec-cert-crse-01-wk-03/</guid>
       <description>Week Three of Google&amp;rsquo;s Cybersecurity Certification, Foundations of Cybersecurity</description>
     </item>
     
     <item>
       <title>Google Cybersecurity Professional Certificate - Course 01 | Week 01</title>
-      <link>https://arter.ro/notes/google-cybersec-cert-crse-01-wk-01/</link>
+      <link>https://ethi.cz/notes/google-cybersec-cert-crse-01-wk-01/</link>
       <pubDate>Tue, 30 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://arter.ro/notes/google-cybersec-cert-crse-01-wk-01/</guid>
+      <guid>https://ethi.cz/notes/google-cybersec-cert-crse-01-wk-01/</guid>
       <description>Week One of Google&amp;rsquo;s Cybersecurity Certification, Foundations of Cybersecurity</description>
     </item>
     
     <item>
       <title>Google Cybersecurity Professional Certificate - Course 01 | Week 02</title>
-      <link>https://arter.ro/notes/google-cybersec-cert-crse-01-wk-02/</link>
+      <link>https://ethi.cz/notes/google-cybersec-cert-crse-01-wk-02/</link>
       <pubDate>Tue, 30 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://arter.ro/notes/google-cybersec-cert-crse-01-wk-02/</guid>
+      <guid>https://ethi.cz/notes/google-cybersec-cert-crse-01-wk-02/</guid>
       <description>Week Two of Google&amp;rsquo;s Cybersecurity Certification, Foundations of Cybersecurity</description>
     </item>
     
     <item>
       <title>Behringer UV1 Audio Stuttering</title>
-      <link>https://arter.ro/synapse/behringer-uv1-linux-stutter/</link>
+      <link>https://ethi.cz/synapses/behringer-uv1-linux-stutter/</link>
       <pubDate>Tue, 31 May 2022 22:42:54 -0700</pubDate>
       
-      <guid>https://arter.ro/synapse/behringer-uv1-linux-stutter/</guid>
+      <guid>https://ethi.cz/synapses/behringer-uv1-linux-stutter/</guid>
       <description>Fixing the audio stutter in Linux (Arch)</description>
     </item>
     
     <item>
       <title>Kubernetes Absolute Beginner</title>
-      <link>https://arter.ro/notes/k8s-absolute-beginner/</link>
+      <link>https://ethi.cz/notes/k8s-absolute-beginner/</link>
       <pubDate>Fri, 29 Apr 2022 12:48:00 -0700</pubDate>
       
-      <guid>https://arter.ro/notes/k8s-absolute-beginner/</guid>
+      <guid>https://ethi.cz/notes/k8s-absolute-beginner/</guid>
       <description>Notes pertaining to the KodeKloud Kubernetes Absolute Beginner course</description>
     </item>
     

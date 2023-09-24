@@ -1,64 +1,63 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on arter.ro</title>
-    <link>https://arter.ro/tags/</link>
-    <description>Recent content in Tags on arter.ro</description>
+    <title>Tags on know.ethicz</title>
+    <link>https://ethi.cz/tags/</link>
+    <description>Recent content in Tags on know.ethicz</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <copyright>Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 28 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://arter.ro/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Wed, 28 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ethi.cz/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>certificates</title>
-      <link>https://arter.ro/tags/certificates/</link>
+      <link>https://ethi.cz/tags/certificates/</link>
       <pubDate>Wed, 28 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://arter.ro/tags/certificates/</guid>
+      <guid>https://ethi.cz/tags/certificates/</guid>
       <description></description>
     </item>
     
     <item>
       <title>cybersecurity</title>
-      <link>https://arter.ro/tags/cybersecurity/</link>
+      <link>https://ethi.cz/tags/cybersecurity/</link>
       <pubDate>Wed, 28 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://arter.ro/tags/cybersecurity/</guid>
+      <guid>https://ethi.cz/tags/cybersecurity/</guid>
       <description></description>
     </item>
     
     <item>
       <title>google</title>
-      <link>https://arter.ro/tags/google/</link>
+      <link>https://ethi.cz/tags/google/</link>
       <pubDate>Wed, 28 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://arter.ro/tags/google/</guid>
+      <guid>https://ethi.cz/tags/google/</guid>
       <description></description>
     </item>
     
     <item>
       <title>audio</title>
-      <link>https://arter.ro/tags/audio/</link>
+      <link>https://ethi.cz/tags/audio/</link>
       <pubDate>Tue, 31 May 2022 22:42:54 -0700</pubDate>
       
-      <guid>https://arter.ro/tags/audio/</guid>
+      <guid>https://ethi.cz/tags/audio/</guid>
       <description></description>
     </item>
     
     <item>
       <title>linux</title>
-      <link>https://arter.ro/tags/linux/</link>
+      <link>https://ethi.cz/tags/linux/</link>
       <pubDate>Tue, 31 May 2022 22:42:54 -0700</pubDate>
       
-      <guid>https://arter.ro/tags/linux/</guid>
+      <guid>https://ethi.cz/tags/linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>kubernetes</title>
-      <link>https://arter.ro/tags/kubernetes/</link>
+      <link>https://ethi.cz/tags/kubernetes/</link>
       <pubDate>Fri, 29 Apr 2022 12:48:00 -0700</pubDate>
       
-      <guid>https://arter.ro/tags/kubernetes/</guid>
+      <guid>https://ethi.cz/tags/kubernetes/</guid>
       <description></description>
     </item>
     
